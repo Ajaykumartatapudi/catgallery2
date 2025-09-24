@@ -74,19 +74,19 @@
 
 
 
-    @keyframes fadeIn {
+    @keyframes flipIn {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: rotateY(90deg);
       }
       to {
         opacity: 1;
-        transform: translateY(0);
+        transform: rotateY(0deg);
       }
     }
-    .gallery .card:last-child:nth-child(10) {
-  justify-self: center;
-}
+  .card{
+    animation: flipIn 0.8s ease forwards;
+  }
 
   </style>
 </head>
@@ -127,3 +127,4 @@
 </body>
 
 </html>
+
